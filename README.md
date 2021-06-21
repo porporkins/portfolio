@@ -10,6 +10,7 @@ It is used for maintenance of my website and for learning purposes.
 This is to pen down my plan for completing the personal portfolio and outlining my initial requirements.
 
 Task No. | Description | Timeline | Done?
+-------- | ----------- | -------- | -----
 1 | Wireframe the website | 1 day |
 2 | Create files and deploy locally | 1 day |
 3 | Set up version control | 1 day |
