@@ -11,10 +11,10 @@ This is to pen down my plan for completing the personal portfolio and outlining 
 
 Task No. | Description | Timeline | Done?
 -------- | ----------- | -------- | -----
-1 | Wireframe the website | 1 day |
-2 | Create files and deploy locally | 1 day |
-3 | Set up version control | 1 day |
-4 | Build the Home Page | 1 week | 
+1 | Wireframe the website | 1 day | Yes
+2 | Create files and deploy locally | 1 day | Yes
+3 | Set up version control | 1 day | Yes
+4 | Build the Home Page | 1 week | Current
 5 | Build the Contact Page | 1 week | 
 6 | Style the content | 1 week | 
 7 | Make it interactive | 2 days | 

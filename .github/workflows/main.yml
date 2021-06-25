@@ -1,0 +1,32 @@
+# Basic workflow to deploy files to the shared hosting server
+
+name: Deploy
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push request events but only for the main branch
+  push:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "web-deploy"
+  web-deploy:
+    # The type of runner that the job will run on    
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+  
+      # Deploys the code to the FTP server
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ftp.tohyongyao.codes
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: /public_html/
