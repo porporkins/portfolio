@@ -130,17 +130,11 @@ a {
 
 #contact-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap;
 }
-
-#contact-container > * {
-  font-size: 2em;
-  width: 2em;
-  margin-top: var(--spacing-1);
-}
-
 
 @media only screen and (max-width: 600px) {
   .about-me-container {
